@@ -9,3 +9,11 @@ Merch Planner	understand sales and purchase plan implications	I can reforecast a
 All Merch	Promo plan implications	Plan for alternatives	
 Demand or Merch Planner	Understand DIFOT trend	Consider risk in the planned receipts
 Category Manager	have a reliable and clear DIFOT report suite	Engage confidently in performance and commercial conversations with TP's
+
+User	See TP performance	Plan accordingly
+
+User	Select an individual TP to view	I can see their individual DIFOT statistics
+User	Select an individual product to view	I can see its individual DIFOT statistics
+User	Compare multiple TPs	I can make an informed decision
+User	See a TP's DIFOT over time	I can plan accordingly
+User	See DIFOT statistics by order
