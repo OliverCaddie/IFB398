@@ -1,0 +1,19 @@
+QUESTIONS
+
+Do you want to have user templates for the app (i.e. Manager, Planner, Buyer)?
+	- Do you want the app to behave differently for different users?
+	- Would a Category Manager want a different set of statistics to a Buyer?
+	- Or do you want them to generate their own statistics through the same interface?
+
+What DIFOT statistics are wanted?
+	- Should one TP's DIFOT be independent of other TPs, or should they influence eachother
+	- Do you want both dependant and independent statistics
+
+What are the strict definitions for:
+	- Buyers
+	- Category Managers
+	- Demand Planners
+	- Merch Planners
+	- Product Managers
+	- Assistants
+	- Inbound Controller

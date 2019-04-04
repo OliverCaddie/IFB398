@@ -1,0 +1,11 @@
+PRELIMINARY USER STORIES
+
+As a	I want to	So that
+
+Category Manager	the ability to monitor delivery if full performance	I know if it will impact the customer and/or plan
+Category Manager	the ability to monitor delivery if on time performance	I know if it will impact the customer and/or plan
+Demand Planner	understand demand implications	I can reforecast and recommend alternatives
+Merch Planner	understand sales and purchase plan implications	I can reforecast and recommend alternatives
+All Merch	Promo plan implications	Plan for alternatives	
+Demand or Merch Planner	Understand DIFOT trend	Consider risk in the planned receipts
+Category Manager	have a reliable and clear DIFOT report suite	Engage confidently in performance and commercial conversations with TP's
