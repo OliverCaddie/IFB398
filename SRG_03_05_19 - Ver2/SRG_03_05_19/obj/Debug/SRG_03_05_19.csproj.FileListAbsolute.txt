@@ -1,0 +1,30 @@
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe.config
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\bin\Debug\SRG_03_05_19.pdb
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.csprojAssemblyReference.cache
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.Form1.resources
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.Properties.Resources.resources
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.GenerateResource.cache
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.CoreCompileInputs.cache
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19\SRG_03_05_19\obj\Debug\SRG_03_05_19.pdb
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe.config
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\bin\Debug\SRG_03_05_19.pdb
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.csprojAssemblyReference.cache
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.Form1.resources
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.Properties.Resources.resources
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.GenerateResource.cache
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.CoreCompileInputs.cache
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19 - Copy\SRG_03_05_19\obj\Debug\SRG_03_05_19.pdb
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe.config
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\bin\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\bin\Debug\SRG_03_05_19.pdb
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.csprojAssemblyReference.cache
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.Form1.resources
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.Properties.Resources.resources
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.GenerateResource.cache
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.csproj.CoreCompileInputs.cache
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.exe
+F:\Capstone Project\SRG_03_05_19 - Ver2\SRG_03_05_19\obj\Debug\SRG_03_05_19.pdb

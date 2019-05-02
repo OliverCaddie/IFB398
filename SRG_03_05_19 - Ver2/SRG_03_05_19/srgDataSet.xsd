@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="srgDataSet" targetNamespace="http://tempuri.org/srgDataSet.xsd" xmlns:mstns="http://tempuri.org/srgDataSet.xsd" xmlns="http://tempuri.org/srgDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="srgConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="srgConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SRG_03_05_19.Properties.Settings.GlobalReference.Default.srgConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="bcftest1TableAdapter" GeneratorDataComponentClassName="bcftest1TableAdapter" Name="bcftest1" UserDataComponentName="bcftest1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="srgConnectionString (Settings)" DbObjectName="srg.dbo.bcftest1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Purch_Doc_, Vendor, Item FROM dbo.bcftest1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Purch_Doc_" DataSetColumn="Purch_Doc_" />
+              <Mapping SourceColumn="Vendor" DataSetColumn="Vendor" />
+              <Mapping SourceColumn="Item" DataSetColumn="Item" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="srgDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="srgDataSet" msprop:Generator_UserDSName="srgDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="bcftest1" msprop:Generator_TableClassName="bcftest1DataTable" msprop:Generator_TableVarName="tablebcftest1" msprop:Generator_TablePropName="bcftest1" msprop:Generator_RowDeletingName="bcftest1RowDeleting" msprop:Generator_RowChangingName="bcftest1RowChanging" msprop:Generator_RowEvHandlerName="bcftest1RowChangeEventHandler" msprop:Generator_RowDeletedName="bcftest1RowDeleted" msprop:Generator_UserTableName="bcftest1" msprop:Generator_RowChangedName="bcftest1RowChanged" msprop:Generator_RowEvArgName="bcftest1RowChangeEvent" msprop:Generator_RowClassName="bcftest1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Purch_Doc_" msprop:Generator_ColumnVarNameInTable="columnPurch_Doc_" msprop:Generator_ColumnPropNameInRow="Purch_Doc_" msprop:Generator_ColumnPropNameInTable="Purch_Doc_Column" msprop:Generator_UserColumnName="Purch_Doc_">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vendor" msprop:Generator_ColumnVarNameInTable="columnVendor" msprop:Generator_ColumnPropNameInRow="Vendor" msprop:Generator_ColumnPropNameInTable="VendorColumn" msprop:Generator_UserColumnName="Vendor">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Item" msprop:Generator_ColumnVarNameInTable="columnItem" msprop:Generator_ColumnPropNameInRow="Item" msprop:Generator_ColumnPropNameInTable="ItemColumn" msprop:Generator_UserColumnName="Item">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
