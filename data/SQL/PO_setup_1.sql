@@ -130,3 +130,7 @@ WHERE Purch_Doc_ = '4510608722' AND PO_Quantity IN (13, 6, 47, 11)
 ORDER BY PO_Quantity, Item;
 
 SELECT * FROM chgtest WHERE Object_value = 4510608722
+
+SELECT TOP (10) * FROM POdata
+
+4.204510680729E+21
