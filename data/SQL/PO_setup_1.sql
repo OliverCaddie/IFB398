@@ -44,27 +44,7 @@ SELECT  * FROM POgood WHERE Quantity <> Qty_Delivered
 
 SELECT * FROM POdata WHERE Purch_Doc_ = 4510587975
 USE srg;
-/* CREATE TABLE OF WELL BEHAVED DATA */
-SELECT *
-INTO POgood
-FROM POdata
-WHERE Purch_Doc_ NOT IN (
-SELECT Purch_Doc_
-FROM POdata
-GROUP BY Purch_Doc_, Item
-HAVING COUNT(Item) > 1
-);
 
-/* BAD, DATA, BAD */
-SELECT *
-INTO PObad
-FROM POdata
-WHERE Purch_Doc_ IN (
-SELECT Purch_Doc_
-FROM POdata
-GROUP BY Purch_Doc_, Item
-HAVING COUNT(Item) > 1
-);
 
 
 

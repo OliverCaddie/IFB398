@@ -34,15 +34,28 @@ SELECT DISTINCT Purch_Doc_
 FROM PObad
 GROUP BY Purch_Doc_, Item, Qty_Delivered
 HAVING COUNT(Quantity) > 1 AND SUM(CAST(Quantity AS FLOAT)) = CAST(Qty_Delivered AS FLOAT)) AS t1
-RIGHT JOIN PObad AS t2
-ON t1.Purch_Doc_ = t2.Purch_Doc_
-WHERE t1.Purch_Doc_ IS NOT NULL;
+JOIN PObad AS t2
+ON t1.Purch_Doc_ = t2.Purch_Doc_;
+
+SELECT t3.* FROM 
+(SELECT DISTINCT Purch_Doc_, Item FROM POdata) AS t1
+RIGHT JOIN
+(SELECT DISTINCT Purch_Doc_, Item, Qty_Delivered FROM POdata) AS t2
+ON t1.Purch_Doc = t2.Purch_Doc
+
+
+SELECT Purch_Doc_, Item
+FROM POdata
+GROUP BY Purch_Doc_, Item
+HAVING COUNT(DISTINCT Qty_Delivered) > 1;
 
 SELECT * FROM incon_1 ORDER BY Purch_Doc_, LEN(Item), Item;
 
+SELECT TOP (100) * FROM PObad
+
 SELECT * 
 FROM POdata
-WHERE Purch_Doc_ = '4510965339' ORDER BY LEN(Item), Item;
+WHERE Purch_Doc_ = '4510671707' ORDER BY LEN(Item), Item;
 
 
 SELECT TOP (10) Site, COUNT(Site) AS cnt
@@ -64,7 +77,7 @@ SELECT DISTINCT Purch_Doc_ FROM PObad WHERE PO_Quantity <> Scheduled_Qty) AS t;
 
 
 
-SELECT * FROM incon_1 ORDER BY Purch_Doc_, LEN(Item), Item;
+SELECT * FROM incon_1 WHERE Purch_Doc_ = '4510965356';
 
 
 
