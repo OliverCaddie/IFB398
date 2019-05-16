@@ -1,0 +1,74 @@
+\documentclass[paper=a4]{article}
+
+
+
+\begin{document}
+
+TITLE PAGE
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%Keyu
+Briefly discuss retail, deliveries \\
+Introduce SRG, DIFOT and its impact (projected 100s of thousands saved) \\
+Briefly outline solution (very brief and general)
+1.1	Project Description
+The Capstone team MCCX consists of Oliver Caddie, Hai Cao, Larysa McGookey and Keyu Xu. Two CS students, whose role in the group is mainly developer. Two IS students, whose role in the group is mainly the designer. The project we chose was to provide IT support to a large local retail company to help them improve the Measuring Supplier DIFOT (Delivery in full and on time), which is a significant problem they are facing now. 
+There are many stakeholders in the description of the project. Companies involved in Capstone project include Super Retail Group, SRG's brand (BCF, SRC, Rebel, Macpac), SRG's supplier, and SRG’s DC. SRG is a large multinational retailer that helps brands and small stores make orders and ship goods to local warehouses, then transfer the goods to brands/stores. In business, SRG spares no effort to meet customers' needs and treat customers enthusiastically. So company has now grown into a leader in retailing of auto, sport and outdoor leisure retail in Australia and New Zealand. Its iconic brands include BCF boating, camping, fishing, Macpac, Rebel and Supercheap Auto. Annual turnover exceeded \$2.5 billion.
+Christine describes the problem that some suppliers are unable to deliver their products on time, but in a competitive retail environment, it has become more crucial than ever before to have products available for our customers when they want it. The SRG want a software that helps them process their database data and visualize it. However, due to the large number of locations, so many orders have been delivered in many brands. The current software is difficult to quantify the real value of delayed delivery to our stores and customers in the face of this complex data. So Christine hopes that the software we designed will help them solve this problem, so that they can better understand which suppliers delay delivery will improve future negotiations and help motivate suppliers to comply with delivery policies. It will be very helpful in their bussiness,projected100s of thousands saved.
+In order to achieve the goal of this project, we try boldly to solve the problem with the permission of client. MCCX team divides the work into two parts. In the first semester, we identified solutions to SRG problems, complete user stories and user interface design, and process data provided by customers in the database, and import it into the database we created. We need to use SQL Server and proto.io in this part of our work. In the second semester, we will focus on the analysis of database data. And connect the server to the C\# application program, write the application framework with C\#, and create the function of executing custom queries from the application program to the database. We need to use SQL Server and C\#.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Project Scope and Plan}
+%Hai
+Briefly go over whole process \\
+- data (comes first to provide good framework)\\
+- analysis (second for functionality) \\
+- usability (third for ease of use)
+
+\subsection{Project Plan}
+%Larysa
+Release plan (each sprint is a release) \\
+- Sprint 1: basic app that queries related data, end sem1 \\
+- Sprint 2/3: app that provides DIFOT info (? 2 -> DIF, 3 -> DOT), end sem2 w8 \\
+- Sprint 4: provides usability and report functionality, end sem2\\
+\\
+%Oliver
+First sprint user stories \\
+Expand on some, link to others \\
+Discuss tasks and estimates (data cleaning)\\
+\\
+Cleaning the provided data was the biggest hurdle in the first sprint due to the large number and type of inconsistencies 
+prevalent within. Resolving them required many queries to extract row duplicates and splits. 
+
+
+\subsection{Feasability Analysis}
+DIF - Current process \\
+DOT - Not in widespread use
+Difficulties in data cleaning/analysis due to largescale operation with many moving parts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Artefact}
+\subsection{Architecture}
+SAP -> SQLServer -> C\# \\
+
+\subsection{Technical Description}
+ERD (expand heavily) \\
+Cleaning scripts, SAP -> SQL \\
+SQL -> C\# (brief)
+
+\subsection{Functionality}
+Related data (hopefully w/ import script) \\
+C\# query application (screenshots) 
+
+\subsection{Quality and Metrics}
+\% of data related (hopefully 100\%) \\
+unit tests for query responses, invalid queries, etc. \\
+Burndown chart
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
