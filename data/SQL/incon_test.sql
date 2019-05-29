@@ -7,6 +7,11 @@ GROUP BY Purch_Doc_, Item
 HAVING COUNT(Item) > 1 ) AS t2
 ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item;
 
+
+
+
+
+
 SELECT COUNT(1)
 FROM (
 SELECT DISTINCT Purch_Doc_, Item
@@ -92,7 +97,7 @@ SELECT * FROM i2) AS t2
 ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item
 WHERE t2.Purch_Doc_ IS NULL AND t2.Item IS NULL;
 
-SELECT COUNT(1) FROM (SELECT DISTINCT Purch_Doc_, Item FROM PObad3) AS t;
+SELECT COUNT(1) FROM (SELECT DISTINCT Purch_Doc_, Item FROM PObad2) AS t;
 
 SELECT 
 FROM (SELECT DISTINCT * FROM PObad2) AS t1
@@ -100,7 +105,7 @@ FROM (SELECT DISTINCT * FROM PObad2) AS t1
 
 SELECT TOP (100) * FROM PObad2 ORDER BY Purch_Doc_, LEN(Item), Item;
 
-DROP VIEW PObad3
+
 
 CREATE VIEW PObad3 AS
 SELECT t1.*
@@ -112,6 +117,22 @@ HAVING COUNT(Item) > 1 ) AS t2
 ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item
 WHERE t2.Purch_Doc_ IS NOT NULL AND t2.Item IS NOT NULL;
 
-
+SELECT COUNT(1) FROM (SELECT DISTINCT Purch_Doc_, Item FROM PObad3) AS t;
 
 SELECT TOP (100) * FROM PObad3 ORDER BY Purch_Doc_, LEN(Item), Item;
+
+
+SELECT * FROM PObad2 WHERE Purch_Doc_ = '4510739445';
+SELECT * FROM POdata_T2 WHERE Purch_Doc_ = '4510739445';
+
+
+
+SELECT * FROM POdata_T2;
+
+
+SELECT COUNT(1) 
+FROM (
+SELECT t1.Purch_Doc_, t1.Item, t1.Quantity, t2.Quantity
+FROM PObad t1 JOIN POdata_T2 t2
+ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item AND t1.Quantity = t2.Quantity
+) AS y;
