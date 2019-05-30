@@ -12,6 +12,7 @@ DROP TABLE type4;
 DROP TABLE temp1;
 DROP TABLE mov_avg_issue;
 
+ALTER TABLE POdata
 
 SELECT * INTO POdata FROM (
 SELECT * FROM POdata_T1
@@ -107,6 +108,7 @@ JOIN
 	GROUP BY t1.Purch_Doc_, t1.Item, t1.Pstng_Date
 ) AS t4
 ON t3.Purch_Doc_ = t4.Purch_Doc_ AND t3.Item = t4.Item AND t3.Pstng_Date = t4.Pstng_Date;
+
 
 
 SELECT * 
@@ -240,14 +242,6 @@ FROM type3
 GROUP BY Purch_Doc_, Item, Qty_Delivered
 HAVING SUM(Quantity) <> Qty_Delivered) AS t2
 WHERE t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item);
-
-/* REMOVE CATEGORISED DATA FROM PObad */
-DELETE t1
-FROM PObad AS t1 JOIN (
-SELECT DISTINCT Purch_Doc_, Item
-FROM type3) AS t2
-ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item;
-
 /* DELETE TROUBLESOME DATA (SHOULD BE ONLY A FEW) */
 DELETE t1 
 FROM type3 AS t1 JOIN (
@@ -256,6 +250,16 @@ FROM type3
 GROUP BY Purch_Doc_, Item, Qty_Delivered
 HAVING SUM(Quantity) <> Qty_Delivered) AS t2
 ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item;
+
+
+/* REMOVE CATEGORISED DATA FROM PObad */
+DELETE t1
+FROM PObad AS t1 JOIN (
+SELECT DISTINCT Purch_Doc_, Item
+FROM type3) AS t2
+ON t1.Purch_Doc_ = t2.Purch_Doc_ AND t1.Item = t2.Item;
+
+
 
 
 

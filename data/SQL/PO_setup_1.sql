@@ -6,7 +6,7 @@ brand CHAR(3),
 ord_date DATE,
 vendor VARCHAR(10),
 del_site char(4),
-deleted BIT,
+deleted BIT, -- Maybe should be in item
 );
 
 CREATE TABLE purchase_item (
@@ -36,7 +36,7 @@ qty FLOAT,
 PRIMARY KEY (purchase_id, item, post_date, entry_date),
 FOREIGN KEY (purchase_id, item) REFERENCES purchase_item (purchase_id, item)
 );
-
+-- All the current categorised good data (POgood, type[1, 4])
 SELECT * 
 INTO POinsert
 FROM (
